@@ -1,5 +1,5 @@
-Summary:	GNUe Common Library is the basis for the GNUe tools
-#Summary(pl):	
+Summary:	GNUe Common Library - the basis for the GNUe tools
+Summary(pl):	GNUe Common Library - wspólna biblioetka bêd±ca podstaw± dla narzêdzi GNUe
 Name:		gnue-common
 Version:	0.5.14
 Release:	0.1
@@ -11,6 +11,7 @@ URL:		http://www.gnuenterprise.org/
 BuildRequires:	python
 BuildRequires:	python-devel
 Requires:	python
+Obsoletes:	GNUe-Common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +25,16 @@ defines and implements an RPC abstraction layer that will allow
 server processes to define their public methods once and have them
 available to CORBA, XML-RPC, SOAP, and DCOM clients.
 
-#%description -l pl
+%description -l pl
+GNUe Common Library to podstawa dla narzêdzi GNUe tools, takich jak
+Forms, Reports, Application Server czy Designer. Implementuje warstwê
+abstrakcji dla baz danych dostarczaj±c± obs³ugê wiêkszo¶ci popularnych
+baz. Wbudowany parser XML do obiektów oraz przekszta³canie obiektów
+do XML s± u¿ywane przez Forms, Reports i Designera w celu zapisu i
+odczytu definicji Forms/Report do/z pliku XML. Biblioteka definiuje i
+implementuje tak¿e warstwê abstrakcji RPC pozwalaj±c± procesom serwera
+na definiowanie w³asnych metod publicznych udostêpnianych klientom
+interfejsów CORBA, XML-RPC, SOAP i DCOM.
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -54,5 +64,5 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/gnue
 %{_datadir}/gnue
 %dir /etc/gnue
-%config(noreplace) %verify(not size mtime md5) /etc/gnue/*.conf
+%config(noreplace) %verify(not md5 mtime size) /etc/gnue/*.conf
 %{_mandir}/man?/*
