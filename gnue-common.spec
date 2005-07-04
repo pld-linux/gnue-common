@@ -37,7 +37,7 @@ na definiowanie w³asnych metod publicznych udostêpnianych klientom
 interfejsów CORBA, XML-RPC, SOAP i DCOM.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
