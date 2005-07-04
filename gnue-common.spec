@@ -31,6 +31,7 @@ available to CORBA, XML-RPC, SOAP, and DCOM clients.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_datadir}/gnue/grpc
 
 python setup.py install \
 	--install-lib=%{py_sitedir} \
