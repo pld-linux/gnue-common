@@ -5,9 +5,9 @@ Version:	0.5.14
 Release:	0.1
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://www.gnue.org/downloads/current/%{name}-%{version}.tar.gz
+Source0:	http://www.gnuenterprise.org/downloads/current/%{name}-%{version}.tar.gz
 # Source0-md5:	cb92026b01dc32bdc3b8ea80d3bcbd8f
-URL:		http://www.gnue.org/
+URL:		http://www.gnuenterprise.org/
 BuildRequires:	python
 BuildRequires:	python-devel
 Requires:	python
