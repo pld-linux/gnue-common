@@ -49,8 +49,7 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
-# watch out for paths.py
-#find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -exec rm {} \;
+find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -a \! -name paths.py -exec rm {} \;
 
 %find_lang %{name}
 
