@@ -51,6 +51,9 @@ python setup.py install \
 
 find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -a \! -name paths.py -exec rm {} \;
 
+mv $RPM_BUILD_ROOT/etc/gnue/{sample.,}connections.conf
+mv $RPM_BUILD_ROOT/etc/gnue/{sample.,}gnue.conf
+
 %find_lang %{name}
 
 %clean
