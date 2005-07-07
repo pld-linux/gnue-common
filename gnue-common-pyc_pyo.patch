@@ -1,0 +1,18 @@
+--- gnue-common-0.5.14/src/apps/plugin.py	2005-02-11 17:17:43.000000000 +0100
++++ gnue-common-0.5.14/src/apps/plugin.py	2005-07-07 15:58:35.000000000 +0200
+@@ -200,9 +200,13 @@
+     (subname, subext) = os.path.splitext (subfile)
+     subpath = os.path.join (basedir, subfile)
+     # We are only interested in Python modules or packages
+-    if (not want_packages and subext == '.py' and subname != '__init__') or \
++    if (not want_packages and
++        (subext == '.py' or subext == '.pyc' or subext == '.pyo')
++        and subname != '__init__') or \
+        (os.path.isdir (subpath) and \
+-        os.path.isfile (os.path.join (subpath, '__init__.py'))):
++        (os.path.isfile (os.path.join (subpath, '__init__.py'))  or
++         os.path.isfile (os.path.join (subpath, '__init__.pyc')) or
++         os.path.isfile (os.path.join (subpath, '__init__.pyo')))):
+       result = result + [subname]
+   return result
+ 
