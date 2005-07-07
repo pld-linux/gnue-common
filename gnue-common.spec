@@ -7,6 +7,7 @@ License:	GPL
 Group:		Libraries/Python
 Source0:	http://www.gnuenterprise.org/downloads/current/%{name}-%{version}.tar.gz
 # Source0-md5:	cb92026b01dc32bdc3b8ea80d3bcbd8f
+Patch0:		%{name}-pyc_pyo.patch
 URL:		http://www.gnuenterprise.org/
 BuildRequires:	python
 BuildRequires:	python-devel
@@ -38,6 +39,7 @@ interfejsów CORBA, XML-RPC, SOAP i DCOM.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
