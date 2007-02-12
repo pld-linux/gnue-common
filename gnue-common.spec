@@ -1,5 +1,5 @@
 Summary:	GNUe Common Library - the basis for the GNUe tools
-Summary(pl):	GNUe Common Library - wspólna biblioetka bêd±ca podstaw± dla narzêdzi GNUe
+Summary(pl.UTF-8):   GNUe Common Library - wspÃ³lna biblioetka bÄ™dÄ…ca podstawÄ… dla narzÄ™dzi GNUe
 Name:		gnue-common
 Version:	0.5.14
 Release:	0.1
@@ -26,16 +26,16 @@ defines and implements an RPC abstraction layer that will allow
 server processes to define their public methods once and have them
 available to CORBA, XML-RPC, SOAP, and DCOM clients.
 
-%description -l pl
-GNUe Common Library to podstawa dla narzêdzi GNUe tools, takich jak
-Forms, Reports, Application Server czy Designer. Implementuje warstwê
-abstrakcji dla baz danych dostarczaj±c± obs³ugê wiêkszo¶ci popularnych
-baz. Wbudowany parser XML do obiektów oraz przekszta³canie obiektów
-do XML s± u¿ywane przez Forms, Reports i Designera w celu zapisu i
+%description -l pl.UTF-8
+GNUe Common Library to podstawa dla narzÄ™dzi GNUe tools, takich jak
+Forms, Reports, Application Server czy Designer. Implementuje warstwÄ™
+abstrakcji dla baz danych dostarczajÄ…cÄ… obsÅ‚ugÄ™ wiÄ™kszoÅ›ci popularnych
+baz. Wbudowany parser XML do obiektÃ³w oraz przeksztaÅ‚canie obiektÃ³w
+do XML sÄ… uÅ¼ywane przez Forms, Reports i Designera w celu zapisu i
 odczytu definicji Forms/Report do/z pliku XML. Biblioteka definiuje i
-implementuje tak¿e warstwê abstrakcji RPC pozwalaj±c± procesom serwera
-na definiowanie w³asnych metod publicznych udostêpnianych klientom
-interfejsów CORBA, XML-RPC, SOAP i DCOM.
+implementuje takÅ¼e warstwÄ™ abstrakcji RPC pozwalajÄ…cÄ… procesom serwera
+na definiowanie wÅ‚asnych metod publicznych udostÄ™pnianych klientom
+interfejsÃ³w CORBA, XML-RPC, SOAP i DCOM.
 
 %prep
 %setup -q
