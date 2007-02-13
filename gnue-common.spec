@@ -1,5 +1,5 @@
 Summary:	GNUe Common Library - the basis for the GNUe tools
-Summary(pl.UTF-8):   GNUe Common Library - wspólna biblioetka będąca podstawą dla narzędzi GNUe
+Summary(pl.UTF-8):	GNUe Common Library - wspólna biblioetka będąca podstawą dla narzędzi GNUe
 Name:		gnue-common
 Version:	0.5.14
 Release:	0.1
